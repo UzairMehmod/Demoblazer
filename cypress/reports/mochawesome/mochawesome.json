@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-19T12:53:12.843Z",
+    "end": "2024-01-19T12:53:21.042Z",
+    "duration": 8199,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c6fbd03-61c8-4e0b-ab92-01737bf4551b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dbSignIn.cy.js",
+      "file": "cypress\\e2e\\dbSignIn.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "64300058-77cd-4d78-ad8f-56cc9be4ff70",
+          "title": "Login Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should log in with valid credentials",
+              "fullTitle": "Login Functionality Should log in with valid credentials",
+              "timedOut": null,
+              "duration": 2864,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Visit the login page\ncy.visit('https://demoblaze.com/index.html');\ncy.get('#login2').click();\ncy.get('#loginusername').type(\"uzair12\");\ncy.get('#loginpassword').type(\"test123\");\ncy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click();",
+              "err": {},
+              "uuid": "337d8103-89c9-4ccc-9d08-55563645d40e",
+              "parentUUID": "64300058-77cd-4d78-ad8f-56cc9be4ff70",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Contact us",
+              "fullTitle": "Login Functionality Contact us",
+              "timedOut": null,
+              "duration": 2343,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demoblaze.com/index.html');\ncy.get(':nth-child(2) > .nav-link').click();\ncy.get('#recipient-email').type(\"uzairtest@gmail.com\");\ncy.get('#recipient-name').type(\"Uzair\");\ncy.get('#recipient-name').type(\"contact us\");\ncy.get('#exampleModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click();",
+              "err": {},
+              "uuid": "db44d440-17be-4f0c-bb98-1f7c44c22f4a",
+              "parentUUID": "64300058-77cd-4d78-ad8f-56cc9be4ff70",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "337d8103-89c9-4ccc-9d08-55563645d40e",
+            "db44d440-17be-4f0c-bb98-1f7c44c22f4a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5207,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
